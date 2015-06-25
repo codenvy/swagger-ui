@@ -16,11 +16,11 @@
     <parent>
         <artifactId>maven-depmgt-pom</artifactId>
         <groupId>org.eclipse.che.depmgt</groupId>
-        <version>1.21.1-RC-SNAPSHOT</version>
+        <version>1.21.1</version>
     </parent>
     <groupId>com.codenvy.platform-api</groupId>
     <artifactId>codenvy-api-docs-ui</artifactId>
-    <version>1.6.1-RC-SNAPSHOT</version>
+    <version>1.6.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Codenvy API Docs :: UI</name>
     <scm>

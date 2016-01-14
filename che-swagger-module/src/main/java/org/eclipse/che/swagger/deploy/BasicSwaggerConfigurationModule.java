@@ -26,7 +26,6 @@ public class BasicSwaggerConfigurationModule extends ServletModule {
                 .of("api.version", "1.0",
                     "swagger.api.title", "Eclipse Che",
                     "swagger.api.basepath", "/api"
-
                    ));
     }
 }

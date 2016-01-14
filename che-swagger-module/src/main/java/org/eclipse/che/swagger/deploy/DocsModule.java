@@ -14,6 +14,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
 import com.google.inject.name.Names;
 
+import org.apache.commons.lang3.StringUtils;
 import org.eclipse.che.inject.DynaModule;
 
 /**
@@ -26,8 +27,9 @@ public class DocsModule extends AbstractModule {
 
         bind(org.eclipse.che.swagger.rest.SwaggerSpecificationService.class);
         bind(org.eclipse.che.swagger.rest.SwaggerSerializers.class).asEagerSingleton();
+        //trim is a fake to make this module dependent to commons lang3 and have correct version. this is need for dependency convergence.
         final Multibinder<Class> ignoredCodenvyJsonClasses =
-                Multibinder.newSetBinder(binder(), Class.class, Names.named("codenvy.json.ignored_classes"));
+                Multibinder.newSetBinder(binder(), Class.class, Names.named(StringUtils.trim("codenvy.json.ignored_classes")));
         ignoredCodenvyJsonClasses.addBinding().toInstance(io.swagger.models.Swagger.class);
 
     }

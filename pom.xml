@@ -20,7 +20,7 @@
     </parent>
     <groupId>org.eclipse.che.swagger</groupId>
     <artifactId>che-swagger-parent</artifactId>
-    <version>4.0.0-beta-12</version>
+    <version>4.0.0-beta-13-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Che Swagger :: Parent</name>
     <modules>
@@ -30,7 +30,7 @@
     <scm>
         <connection>scm:git:git@github.com:codenvy/swagger-ui.git</connection>
         <developerConnection>scm:git:git@github.com:codenvy/swagger-ui.git</developerConnection>
-        <tag>4.0.0-beta-12</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/codenvy/swagger-ui</url>
     </scm>
 </project>
